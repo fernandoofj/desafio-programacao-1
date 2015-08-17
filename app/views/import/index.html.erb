@@ -1,0 +1,15 @@
+﻿<div align="center" style="width: 100%; margin-top: 5%">
+	<fieldset>
+		<legend>Importar Arquivo</legend>
+		<div style="align: center; margin-top: 20px; margin-bottom: 20px">
+			<% flash.each do |name, msg| %>
+				<%= content_tag :div, msg, class: name %>
+				<br>
+			<% end %>
+			<%= form_tag({action: :upload}, multipart: true) do %>
+				Arquivo: <%= file_field_tag 'file' %>
+				<%= submit_tag("Importar") %>
+			<% end %>
+		</div>
+	</fieldset>	
+</div>

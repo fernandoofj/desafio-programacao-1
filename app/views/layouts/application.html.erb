@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio de Programação - Fernando Fernandes</title>
+        <%= stylesheet_link_tag    'application', media: 'all' %>
+        <%= javascript_include_tag 'application' %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <div>
+            <% if current_user %>
+				<div style="float:left; width: auto">
+					Seja bem vindo <strong><%= current_user.name %></strong>!
+				</div>
+				<div style="float:right">
+					<%= link_to image_tag("sign-out.png", height: 20), signout_path, id: "sign_out" %>
+				</div>
+            <% else %>
+				<div align="center">
+					<h2>Você não está autenticado. Efetue seu login com sua conta do google.</h2>
+					<br>
+					<%= link_to image_tag("sign-in-with-google.jpg", width: 200), "/auth/google_oauth2", id: "sign_in" %>
+				</div>
+            <% end %>
+        </div>
+        <div>
+            <%= yield %>
+        </div>
+    </body>
+</html>

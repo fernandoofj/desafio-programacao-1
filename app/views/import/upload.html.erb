@@ -1,0 +1,43 @@
+﻿<h1>Importação Concluída</h1>
+<div>
+    <p>Número de pedidos importados: <%=@orders.size%></p>
+	<p>Valor total: <%=@total%></p>
+    <table id="orders_list">
+        <thead>
+            <tr>
+                <th>Comprador</th>
+                <th>Descrição do Produto</th>
+                <th>Valor Unitário</th>
+                <th>Quantidade</th>
+                <th>Valor (Vl. Un. x Qtd.)</th>
+                <th>Estabelecimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @orders.each do |order| %>
+				<tr>
+					<td>
+						<%=order.customer.name%>
+					</td>
+					<td>
+						<%=order.items.first.product.name%>
+					</td>
+					<td>
+						<%=order.items.first.product.price%>
+					</td>
+					<td>
+						<%=order.items.first.quantity%>
+					</td>
+					<td>
+						<%=order.price%>
+					</td>
+					<td>
+						<%=order.items.first.product.store.name%>
+					</td>
+				</tr>
+            <% end %>
+        </tbody>
+    </table>
+    
+    <p><%= link_to :back %>
+</div>

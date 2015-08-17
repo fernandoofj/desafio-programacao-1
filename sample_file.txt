@@ -1,0 +1,8 @@
+purchaser name	item description	item price	purchase count	merchant address	merchant name
+Fernando Fernandes	Pizza Brunnela com borda recheada	44.0	1	Av João Naves de Ávila 500	Pizzaria Brunela
+Ricardo Medeiros	Rodízio de massas tradicional	26.9	2	Av Rondon Pacheco 300	Barolo Ristorant
+Letícia Fernandes	Trufa coco	2.5	3	Av Rondon Pacheco 300	Cacau Show
+Mickaelly	Cupim Casquerado com Catupiry	65.99	1	Av Anselmo Alves dos Santos 1244	Estância do Cupim
+Mickaelly	Cupim Casquerado com Catupiry	65.99	1	Av Anselmo Alves dos Santos 1244	Estância do Cupim
+Mickaelly	Cupim Casquerado com Catupiry	65.99	1	Av Anselmo Alves dos Santos 1244	Estância do Cupim
+Mickaelly	Cupim Casquerado com Catupiry	65.99	1	Av Anselmo Alves dos Santos 1244	Estância do Cupim
