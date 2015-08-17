@@ -1,28 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Este arquivo descreve os requisitos e instruções para execução da aplicação Rails presente neste diretório.
 
 * Ruby version
+Ruby v2.0 ou posterior (Utilizado Ruby 2.1.5)
 
 * System dependencies
+Esta aplicação tem como pré-requisito os binários do banco de dados SQLite (https://sqlite.org/)
 
 * Configuration
+Executar o comando: "bundle install"
 
 * Database creation
+Executar o comando: "bin/rake db:migrate"
 
 * Database initialization
-
-* How to run the test suite
+Executar o comando: "bin/rake db:setup"
 
 * Services (job queues, cache servers, search engines, etc.)
+Foi utilizada a biblioteca javascript "Datatables" (www.datatables.net) para tornar a listagem dos itens mais amigável
 
 * Deployment instructions
+N/A
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Usage
+Para acessar a aplicação, basta acessar a URL http://localhost:3000
+É necessário autenticar-se com uma conta Google para acessar a tela de importação de arquivo.
